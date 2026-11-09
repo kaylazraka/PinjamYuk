@@ -1,35 +1,43 @@
 
 # PinjamYuk
 
-PinjamYuk merupakan website peminjaman barang untuk kebutuhan kuliah. Website ini dibuat berdasarkan desain Beranda yang sudah dikerjakan pada Tugas 1.
-
-Di dalam website ini terdapat beberapa barang yang bisa dilihat oleh pengguna, seperti kalkulator, laptop, buku catatan, dan kabel charger. Pengguna juga bisa mencari barang melalui kolom pencarian dan memilih barang berdasarkan kategorinya.
+PinjamYuk adalah website peminjaman barang untuk kebutuhan kuliah. Website ini dibuat berdasarkan desain halaman Beranda yang telah dikerjakan pada Tugas 1.
 
 ## Fitur Website
-- Menampilkan daftar barang beserta harga pinjamnya.
+- Menampilkan daftar barang beserta harga peminjaman.
 - Mencari barang berdasarkan nama.
 - Memfilter barang berdasarkan kategori.
 - Tombol pinjam dengan konfirmasi.
 - Menampilkan panduan cara meminjam.
 
-## Teknologi
+## Teknologi yang Digunakan
 - HTML
 - CSS
 - JavaScript
 
-## Susunan File
-- `index.html` : halaman utama website.
-- `styles.css` : mengatur warna, ukuran, dan tata letak.
-- `script.js` : mengatur fungsi pencarian, kategori, dan tombol pinjam.
-- `assets/` : menyimpan gambar barang.
+## Struktur Proyek
 
-## Cara Membuka
-1. Download repository PinjamYuk.
-2. Buka folder proyek.
-3. Klik dua kali file `index.html`.
-4. Website akan terbuka melalui browser.
+```text
+PinjamYuk/
+├── index.html
+├── styles.css
+├── script.js
+├── README.md
+└── assets/
+    ├── kalkulator.png
+    ├── laptop.png
+    ├── buku-catatan.png
+    └── kabel-charger.png
+```
+
+## Cara Menjalankan
+
+1. Download atau clone repository PinjamYuk.
+2. Buka folder proyek PinjamYuk.
+3. Pastikan file index.html, styles.css, script.js, dan folder assets berada dalam struktur yang benar.
+4. Buka file index.html menggunakan browser.
+5. Website PinjamYuk siap digunakan.
 
 ## Demo Website
-Website PinjamYuk dapat diakses melalui GitHub Pages:
 
 https://kaylazraka.github.io/PinjamYuk/
