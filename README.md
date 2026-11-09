@@ -28,3 +28,8 @@ Di dalam website ini terdapat beberapa barang yang bisa dilihat oleh pengguna, s
 2. Buka folder proyek.
 3. Klik dua kali file `index.html`.
 4. Website akan terbuka melalui browser.
+
+## Demo Website
+Website PinjamYuk dapat diakses melalui GitHub Pages:
+
+https://kaylazraka.github.io/PinjamYuk/
