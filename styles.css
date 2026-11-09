@@ -1,0 +1,254 @@
+
+/* 1. Pengaturan dasar */
+:root {
+    --pink-bg: #f8dce9;
+    --pink-header: #f2b6ce;
+    --pink-button: #d985a9;
+    --pink-light: #fff5f8;
+    --pink-text: #684354;
+    --white: #ffffff;
+    --green: #43875b;
+
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--pink-bg);
+    color: var(--pink-text);
+}
+
+/* 2. Header */
+.header {
+    background-color: var(--pink-header);
+    text-align: center;
+    padding: 12px;
+    border-bottom: 2px solid #f5a9c5;
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* 3. Search bar */
+.search-section {
+    display: flex;
+    gap: var(--spacing-large);
+    padding: var(--spacing-medium);
+}
+
+.search-section input {
+    flex: 1;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.search-section button {
+    width: 15%;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--pink-button);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* 4. Kategori */
+.category-section {
+    display: flex;
+    gap: var(--spacing-small);
+    padding: 0 16px;
+}
+
+.category-btn {
+    border: none;
+    border-radius: 7px;
+    background-color: var(--pink-light);
+    color: var(--pink-text);
+    padding: 7px 18px;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.category-btn.active,
+.category-btn:hover {
+    background-color: var(--pink-button);
+    color: var(--white);
+}
+
+/* 5. Daftar barang */
+.product-section {
+    padding: 10px 16px;
+}
+
+.product-section h2,
+.guide-section h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-large);
+}
+
+.product-card {
+    background-color: var(--pink-light);
+    border-radius: 12px;
+    padding: 14px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 85px;
+    height: 65px;
+    object-fit: contain;
+    background-color: var(--white);
+    border-radius: 7px;
+    margin-bottom: 8px;
+}
+
+.product-card h3 {
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.product-card p {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.status {
+    display: block;
+    color: var(--green);
+    font-size: 10px;
+    margin: 5px 0;
+}
+
+.borrow-btn {
+    background-color: var(--pink-button);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    padding: 6px 28px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.borrow-btn:hover {
+    background-color: #c66f96;
+}
+
+.all-products {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--pink-button);
+    text-decoration: none;
+    font-size: 11px;
+}
+
+/* 6. Cara meminjam */
+.guide-section {
+    padding: 15px 16px;
+}
+
+.guide-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+}
+
+.guide-card {
+    background-color: var(--pink-light);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.guide-card span {
+    display: block;
+    color: var(--pink-button);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.guide-card h3 {
+    font-size: 11px;
+    margin: 3px 0;
+}
+
+.guide-card p {
+    font-size: 10px;
+    line-height: 1.4;
+}
+
+/* 7. Tombol peminjaman */
+.borrowing-section {
+    padding: 45px 5%;
+}
+
+.borrowing-btn {
+    display: block;
+    width: 100%;
+    background-color: var(--pink-header);
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+    padding: 13px;
+    border-radius: 11px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 8. Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid var(--pink-header);
+    font-size: 10px;
+    color: #a17b8c;
+}
+
+.footer h3 {
+    color: var(--pink-button);
+    font-size: 12px;
+}
+
+.footer p {
+    margin: 3px 0;
+}
+
+/* 9. Tampilan layar kecil */
+@media (max-width: 700px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .guide-container {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .search-section {
+        gap: 10px;
+    }
+
+    .search-section button {
+        width: 25%;
+    }
+}
